@@ -161,3 +161,16 @@ li h6 {
     right: -1px;
     top: -5px;
 }
+
+
+.cards {
+    height: 330px;
+    width: 100px;
+    background-color: red;
+    
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
