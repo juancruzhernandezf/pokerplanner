@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+html {
+    background: url(resources/background-img.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-    background-image: url(resources/background-img.png);
-    background-size: cover;
     color: #fff;
     font-family: 'Inter', sans-serif;
 }
@@ -153,4 +160,17 @@ li h6 {
     position: absolute;
     right: -1px;
     top: -5px;
+}
+
+
+.cards {
+    height: 330px;
+    width: 100px;
+    background-color: red;
+    
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
 }
