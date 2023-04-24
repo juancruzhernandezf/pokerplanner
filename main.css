@@ -2,11 +2,14 @@
 
 
 html {
-    background: url(resources/background-img.png) no-repeat center center fixed; 
+  background: url(resources/background-img.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
@@ -37,6 +40,7 @@ h1 {
     gap: 1.25rem;
 }
 
+
 .profile_menu {
     border: solid .25rem rgba(254, 247, 243, 0.7);
     box-shadow: 0px 4px 4px 0px #00000040;
@@ -49,7 +53,6 @@ main {
     display: flex;
     gap: 1rem;
     padding: 0 1.5rem 1.5rem 1.5rem;
-    justify-content: space-between;
 }
 
 .stories_container {
@@ -165,12 +168,21 @@ li h6 {
 
 .cards {
     height: 330px;
-    width: 100px;
+    min-width: 15.75rem;
     background-color: red;
-    
+    border-radius: 6px;
+    background: rgba(49, 50, 81, 0.8);
+}
+
+.active-card {
+    border: solid 2px #EABD71;
+    background-color: #585A81;
 }
 
 .cards-container {
+    margin: 1rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
