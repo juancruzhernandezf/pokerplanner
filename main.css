@@ -57,6 +57,7 @@ main {
 
 .stories_container {
    width: 100%;
+   overflow: hidden;
 }
 
 /*SECTION FOR APPROVED STORIES*/
@@ -167,9 +168,9 @@ li h6 {
 
 
 .cards {
-    height: 330px;
-    min-width: 15.75rem;
-    background-color: red;
+    min-height: 20.625rem;
+    max-width: 16rem;
+    min-width: 16rem;
     border-radius: 6px;
     background: rgba(49, 50, 81, 0.8);
 }
@@ -182,7 +183,91 @@ li h6 {
 .cards-container {
     margin: 1rem 0 3rem 0;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.cards-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75rem .75rem 0 .75rem;
+}
+
+.cards-heading h3 {
+    margin: 0;
+}
+
+#current-card-icon {
+    border-radius: 50%;
+    background: #313452;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-description {
+    padding: 0 .75rem .75rem .75rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.inactive-card-icon {
+    border-radius: 50%;
+    background: #313452;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HERE START STORY POINTS CARDS STYLES */
+
+.cards-points {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .75rem;
+    justify-content: space-evenly;
+    gap: .5rem;
+    row-gap: .75rem;
+}
+
+.story-points {
+    cursor: pointer;
+    height: 90px;
+    flex: 1 1 20%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: #B8BADE;
+    padding: .5rem;
+    justify-content: space-between;
+    color: #0E1541;
+}
+
+
+.story-points p {
+    margin: 0;
+    font-size: .875rem;
+}
+
+.story-points h3 {
+    margin: 0;
+    font-size: 1.875rem;
+}
+
+
+.points_upper-left {
+    align-self: start;
+}
+
+.points_center {
+    align-self: center;
+}
+
+.points_bottom-right {
+    align-self: end;
 }
