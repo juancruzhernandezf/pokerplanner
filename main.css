@@ -245,8 +245,17 @@ li h6 {
     padding: .5rem;
     justify-content: space-between;
     color: #0E1541;
+    user-select: none;
 }
 
+.story-points:active {
+    background-color: #EABD71;
+    box-shadow: inset 0px 0px 0px 2px #AB6C01;
+}
+
+.story-points::selection {
+
+}
 
 .story-points p {
     margin: 0;
@@ -286,3 +295,10 @@ li h6 {
 .inactive-cards {
     color: rgba(255, 255, 255, .5);
 }
+
+
+
+
+
+/* Boolean Voting Buttons*/
+
