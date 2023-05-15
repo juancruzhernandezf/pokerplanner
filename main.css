@@ -253,9 +253,9 @@ li h6 {
     box-shadow: inset 0px 0px 0px 2px #AB6C01;
 }
 
-.story-points::selection {
+/*.story-points::selection {
 
-}
+}*/
 
 .story-points p {
     margin: 0;
