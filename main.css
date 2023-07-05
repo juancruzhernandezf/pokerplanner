@@ -324,3 +324,27 @@ li h6 {
     color: rgba(255, 255, 255, .5);
     cursor:not-allowed;
 }
+
+.approved-stories {
+    background: rgba(49, 50, 81, 0.8);
+    width: auto;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.approved-stories h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.icon-placeholder {
+    height: 34px;
+    width: 34px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
